@@ -15,9 +15,9 @@ body {
 img {
     display: block;
 }
-ul{
+ ul{
         padding-inline-start: 0;
-}
+} 
 
 .visually-hidden {
     position: absolute;
@@ -44,7 +44,7 @@ ul{
 
 .container-header{
         display: flex;
-            align-items: center;
+        align-items: center;
           
 }
 .logo1 {
@@ -63,9 +63,7 @@ ul{
     color:var(--accent-color);
 }
 
-.nav {
-    margin-left: 0;
-}
+
 .nav-list{
         display: flex;
             padding-inline-start: 0px;
@@ -118,17 +116,18 @@ ul{
 
 /* Hero styles */
 
+.container{
+
+}
 .hero {
-    
+    height: 600px;
     background-color: var(--secondary-bg-color);
     color: var(--secondary-text-color);
-    padding-bottom: 200px;
     margin-bottom: 94px;
+    
 }
 
-.hero-container{
 
-}
 .button-hero {
     display: block;
     font-family: inherit;
@@ -145,9 +144,10 @@ ul{
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
-       
-       
+    margin-top: 150px;
+    
 }
+
 .hero-header {
     display: block;
     font-weight: 900;
@@ -155,9 +155,7 @@ ul{
     height: 120px;
 
     padding-top: 200px;
-    /* padding-left: 452px;
-    padding-right: 452px; */
-margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
 
     font-size: 44px;
@@ -170,11 +168,17 @@ margin-left: auto;
 
 /* Features styles */
 .features {
+    width: 1170px;
     margin-bottom: 94px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .features-list{
     display: flex;
     list-style-type: none;
+}
+.features-list-item:not(:last-child){
+    margin-right: 30px;
 }
 
 .features-header{
@@ -192,7 +196,10 @@ margin-left: auto;
 
 /* Services styles */
 .services{
-    margin-bottom: 94px;
+    width: 1170px;
+        margin-bottom: 94px;
+        margin-right: auto;
+        margin-left: auto;
 }
 
 .services-list{
@@ -200,7 +207,9 @@ margin-left: auto;
     display: flex;
     justify-content: space-between;
 }
-
+.services-list-item:not(:last-child){
+    margin-right: 30px;
+}
 .services-header{
         font-size: 36px;
         line-height: 1.17;
@@ -212,14 +221,20 @@ margin-left: auto;
 
 .command{
     background-color: #F5F4FA;
-    margin-bottom: 94px;
+    height: 648px;
 }
 .command-list{
+    width: 1170px;
+    padding-bottom: 94px;
+    margin-right: auto;
+    margin-left: auto;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
 }
 .command-header{
+        padding-top: 94px;
+        padding-bottom: 60px;
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
@@ -230,6 +245,12 @@ margin-left: auto;
         font-size: 16px;
         line-height: 19px;
         letter-spacing: 0.03em;
+        text-align: center;
+        background: #FFFFFF;
+            /* material shadow v1 */
+        
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
 
 }
 .command-list-item>h3{
@@ -246,13 +267,17 @@ margin-left: auto;
     margin-bottom: 94px;
     margin-top: 94px;
     margin-right: auto;
-    margin-left: 215px;
+    margin-left: 180px;
 }
 .filter{
     list-style-type: none;
     display: flex;
     justify-content: center;
     margin: 100px 0 50px 0;
+}
+
+.filter-item:not(:last-child){
+    margin-right: 8px;
 }
 
 .button-filter{
@@ -265,14 +290,16 @@ margin-left: auto;
         background-color: #F5F4FA;
         color: var(--main-text-color);
         cursor: pointer;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        
         border-radius: 4px;
+        border: none;
         
 
 }
 .button-filter:hover, .button-filter:focus{
         background-color: var(--accent-color);
         color: var(--secondary-text-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .projects{
@@ -291,8 +318,10 @@ margin-left: auto;
 }
 
 .project-item{
-        border: 1px solid var(--text-color);
+        border: 1px solid #EEEEEE;
+        padding: 0;
 }       
+
 .project-item>p{
         font-size: 16px;
         line-height: 1.88;
@@ -303,9 +332,11 @@ margin-left: auto;
 
 .footer {
         background-color: var(--secondary-bg-color);
-    
+        height: 252px;
 }
 .address{
+    margin-bottom: 60px;
+        margin-left: 215px;
         font-style: normal;
         font-size: 14px;
         line-height: 1.71;
@@ -314,6 +345,7 @@ margin-left: auto;
 }
 .address-list{
     list-style-type: none;
+    
 }
 .address-to{
     color:var(--secondary-text-color);
@@ -327,6 +359,9 @@ margin-left: auto;
     color:var(--accent-color);
 }
 .logo2 {
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 214px;
     font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;

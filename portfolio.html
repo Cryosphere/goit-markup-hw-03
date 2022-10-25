@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портофоліо</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,9 +24,11 @@
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-list-item">
-              <a href="./index.html" class="link current"><span>Студія</span></a>
+              <a href="./index.html" class="link"><span>Студія</span></a>
             </li>
-            <li class="nav-list-item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li class="nav-list-item">
+              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            </li>
             <li class="nav-list-item"><a href="#" class="link">Контакти</a></li>
           </ul>
         </nav>
@@ -37,11 +43,11 @@
         <h1 class="gallery-header visually-hidden">Галерея</h1>
 
         <ul class="filter">
-          <li><button class="button-filter">Усі</button></li>
-          <li><button class="button-filter">Веб-сайти</button></li>
-          <li><button class="button-filter">Додатки</button></li>
-          <li><button class="button-filter">Дизайн</button></li>
-          <li><button class="button-filter">Маркетинг</button></li>
+          <li class="filter-item"><button class="button-filter">Усі</button></li>
+          <li class="filter-item"><button class="button-filter">Веб-сайти</button></li>
+          <li class="filter-item"><button class="button-filter">Додатки</button></li>
+          <li class="filter-item"><button class="button-filter">Дизайн</button></li>
+          <li class="filter-item"><button class="button-filter">Маркетинг</button></li>
         </ul>
 
         <ul class="projects">
