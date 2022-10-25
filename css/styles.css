@@ -12,10 +12,45 @@ body {
         color:var(--main-text-color)        
         
 }
+img {
+    display: block;
+}
+ul{
+        padding-inline-start: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 /* header */
 
+
+
+.header{display: flex;
+    align-items: center;
+    height: 80px;
+    
+}
+
+.container-header{
+        display: flex;
+            align-items: center;
+          
+}
 .logo1 {
+    display: block;
+    margin-left: 215px;
+    margin-right: 93px;
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
@@ -28,14 +63,25 @@ body {
     color:var(--accent-color);
 }
 
+.nav {
+    margin-left: 0;
+}
 .nav-list{
+        display: flex;
+            padding-inline-start: 0px;
         list-style-type: none;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
 }
+.nav-list-item:not(:last-child){
+    margin-right: 50px;
+}
 .nav-list .link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
     text-decoration: none;
     color:var(--main-text-color);
 }
@@ -49,17 +95,20 @@ body {
 }
 
 .contacts{
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+    margin-left: 344px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .contacts-mail {
+    display: inline-block;
+    margin-right: 50px;
     text-decoration: none;
     color:var(--text-color);
 }
 .contacts-phone{
-    
+    display: inline-block;    
     text-decoration: none;
     color:var(--text-color);
 }
@@ -70,29 +119,62 @@ body {
 /* Hero styles */
 
 .hero {
+    
     background-color: var(--secondary-bg-color);
     color: var(--secondary-text-color);
+    padding-bottom: 200px;
+    margin-bottom: 94px;
+}
+
+.hero-container{
+
 }
 .button-hero {
+    display: block;
     font-family: inherit;
     background-color: var(--accent-color);
     color: var(--secondary-text-color);
     font-weight: 700;
+    width: 216px;
+    height: 50px;
     font-size: 16px;
     line-height: 1.88;
     cursor: pointer;
     letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+       
+       
 }
 .hero-header {
+    display: block;
     font-weight: 900;
+    width: 696px;
+    height: 120px;
+
+    padding-top: 200px;
+    /* padding-left: 452px;
+    padding-right: 452px; */
+margin-left: auto;
+    margin-right: auto;
+
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
+    
 }
 
 /* Features styles */
-.features-list{list-style-type: none;
+.features {
+    margin-bottom: 94px;
+}
+.features-list{
+    display: flex;
+    list-style-type: none;
 }
 
 .features-header{
@@ -109,9 +191,14 @@ body {
 }
 
 /* Services styles */
+.services{
+    margin-bottom: 94px;
+}
 
 .services-list{
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .services-header{
@@ -125,13 +212,17 @@ body {
 
 .command{
     background-color: #F5F4FA;
+    margin-bottom: 94px;
 }
 .command-list{
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
 .command-header{
         font-size: 36px;
         line-height: 1.17;
+        text-align: center;
         letter-spacing: 0.03em;
 }
 .command-list-item{
@@ -151,8 +242,17 @@ body {
 }
 
 /* Gallery styles */
+.gallery{
+    margin-bottom: 94px;
+    margin-top: 94px;
+    margin-right: auto;
+    margin-left: 215px;
+}
 .filter{
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 50px 0;
 }
 
 .button-filter{
@@ -165,6 +265,9 @@ body {
         background-color: #F5F4FA;
         color: var(--main-text-color);
         cursor: pointer;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        
 
 }
 .button-filter:hover, .button-filter:focus{
@@ -174,6 +277,10 @@ body {
 
 .projects{
         list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: flex-start;
 }
 
 .project-item>h2{
@@ -183,6 +290,9 @@ body {
         color: var(--main-text-color);
 }
 
+.project-item{
+        border: 1px solid var(--text-color);
+}       
 .project-item>p{
         font-size: 16px;
         line-height: 1.88;
