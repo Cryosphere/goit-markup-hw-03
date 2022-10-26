@@ -36,6 +36,7 @@ img {
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
+    padding: 0 15px;
 }
 /* header */
 
@@ -99,6 +100,7 @@ img {
 }
 
 .contacts{
+    display: flex;
     margin-left: 344px;
     font-weight: 500;
     font-size: 14px;
