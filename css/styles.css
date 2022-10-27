@@ -12,11 +12,17 @@ body {
         color:var(--main-text-color)        
         
 }
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    
+}
 img {
     display: block;
+    margin: 0;
 }
  ul{
         padding-inline-start: 0;
+        margin: 0;
 } 
 
 .visually-hidden {
@@ -44,8 +50,7 @@ img {
 
 .header{display: flex;
     align-items: center;
-    /* height: 80px; */
-    border-bottom;: 1px solid #ECECEC
+    border-bottom: 1px solid #ECECEC
     
 }
 
@@ -124,14 +129,13 @@ img {
 
 /* Hero styles */
 
-.container{
-
-}
 .hero {
     height: 600px;
     background-color: var(--secondary-bg-color);
     color: var(--secondary-text-color);
-    margin-bottom: 94px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+   
     
 }
 
@@ -152,19 +156,18 @@ img {
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
+ 
     
 }
 
 .hero-header {
-    display: block;
     font-weight: 900;
     width: 696px;
     height: 120px;
 
-    padding-top: 200px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 
     font-size: 44px;
     line-height: 1.36;
@@ -177,7 +180,7 @@ img {
 /* Features styles */
 .features {
     width: 1170px;
-    margin-bottom: 94px;
+    padding-top: 94px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -205,7 +208,7 @@ img {
 /* Services styles */
 .services{
     width: 1170px;
-        margin-bottom: 94px;
+        padding-top: 94px;
         margin-right: auto;
         margin-left: auto;
 }
@@ -219,6 +222,7 @@ img {
     margin-right: 30px;
 }
 .services-header{
+    margin-bottom: 50px;
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
@@ -230,10 +234,11 @@ img {
 .command{
     background-color: #F5F4FA;
     height: 648px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .command-list{
-    width: 1170px;
-    padding-bottom: 94px;
+    
     margin-right: auto;
     margin-left: auto;
     list-style-type: none;
@@ -241,14 +246,14 @@ img {
     justify-content: space-between;
 }
 .command-header{
-        padding-top: 94px;
-        padding-bottom: 60px;
+        padding-bottom: 50px;
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
 }
 .command-list-item{
+    width: 270px;
         background-color: var(--main-bg-color);
         font-size: 16px;
         line-height: 19px;
@@ -268,6 +273,13 @@ img {
 }
 .command-list-item>p{
         color: var(--text-color);
+}
+
+.item-info{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* Gallery styles */
@@ -309,6 +321,8 @@ img {
 }
 
 .projects{
+    margin: 0;
+    padding: 0;
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
@@ -317,6 +331,8 @@ img {
 }
 
 .project-item>h2{
+    display: block;
+        margin-bottom: 4px;
         font-size: 18px;
         line-height: 2.0;
         letter-spacing: 0.06em;
@@ -324,21 +340,30 @@ img {
 }
 
 .project-item{
+    width: 370px;
         border-bottom: 1px solid #EEEEEE;
         padding: 0;
 }       
 
 .project-item>p{
+    
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.03em;
         color: var(--text-color);
+}
+.projects-item-info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
 }
 /* Footer styles */
 
 .footer {
         background-color: var(--secondary-bg-color);
         height: 252px;
+        padding-top: 60px;
+        padding-bottom: 60px;
 }
 .address{
     margin-bottom: 60px;
@@ -369,7 +394,8 @@ img {
 }
 .logo2 {
     display: inline-block;
-    margin-top: 60px;
+    /* margin-top: 60px;
+    margin-bottom: 20px; */
     
     font-family: 'Raleway';
         font-weight: 700;
