@@ -189,11 +189,9 @@ ul{
 /* Features styles */
 
 .features {
-    width: 1170px;
+   
     padding-top: 94px;
-    margin-right: auto;
-    margin-left: auto;
-}
+    }
 
 .features-list{
     display: flex;
@@ -205,6 +203,7 @@ ul{
 }
 
 .features-header{
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -220,10 +219,9 @@ ul{
 /* Services styles */
 
 .services{
-    width: 1170px;
-        padding-top: 94px;
-        margin-right: auto;
-        margin-left: auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
 }
 
 .services-list{
@@ -270,7 +268,7 @@ ul{
     width: 270px;
         background-color: var(--main-bg-color);
         font-size: 16px;
-        line-height: 19px;
+        line-height: 1.187;
         letter-spacing: 0.03em;
         text-align: center;
         background: #FFFFFF;
@@ -279,21 +277,23 @@ ul{
 
 }
 .com-card-header{
+    display: block;
         margin-bottom: 10px;
         font-size: 16px;
         font-weight: 500;
         color: var(--main-text-color);
 }
-.command-list-item>p{
+.com-card-text{
+    display: block;
         color: var(--text-color);
 }
 
 .item-info{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom:30px;
-    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
+
 
 /* Gallery styles */
 
@@ -306,7 +306,7 @@ ul{
     list-style-type: none;
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .filter-item:not(:last-child){
@@ -359,7 +359,7 @@ ul{
         padding: 0;
 }       
 
-.project-item>p{
+.project-item p{
     
         font-size: 16px;
         line-height: 1.88;
