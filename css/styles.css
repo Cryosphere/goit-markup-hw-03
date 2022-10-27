@@ -7,22 +7,25 @@
     --secondary-bg-color:#2F303A;
 
 }
+
 body {
         font-family: 'Roboto', sans-serif;
         color:var(--main-text-color)        
         
 }
+
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
-    
 }
+
 img {
     display: block;
     margin: 0;
 }
- ul{
-        padding-inline-start: 0;
-        margin: 0;
+
+ul{
+    padding-inline-start: 0;
+    margin: 0;
 } 
 
 .visually-hidden {
@@ -44,50 +47,51 @@ img {
     margin-left: auto;
     padding: 0 15px;
 }
+
 /* header */
 
-
-
-.header{display: flex;
+.header{
+    display: flex;
     align-items: center;
     border-bottom: 1px solid #ECECEC
-    
 }
 
 .container-header{
-        display: flex;
-        align-items: center;
-          
+    display: flex;
+    align-items: center;          
 }
+
 .logo1 {
     display: block;
-   
     margin-right: 93px;
-        font-family: 'Raleway';
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-        text-decoration: none;
-        color: var(--main-text-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--main-text-color);
 }
+
 .logo-web {
     color:var(--accent-color);
 }
 
 
 .nav-list{
-        display: flex;
-            padding-inline-start: 0px;
-        list-style-type: none;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+    display: flex;
+    padding-inline-start: 0px;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
+
 .nav-list-item:not(:last-child){
     margin-right: 50px;
 }
+
 .nav-list .link{
     padding-top: 32px;
     padding-bottom: 32px;
@@ -95,6 +99,7 @@ img {
     text-decoration: none;
     color:var(--main-text-color);
 }
+
 .nav-list .link:hover,.nav-list .link:focus{
     color:var(--accent-color);
 
@@ -112,17 +117,20 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
 .contacts-mail {
     display: inline-block;
     margin-right: 50px;
     text-decoration: none;
     color:var(--text-color);
 }
+
 .contacts-phone{
     display: inline-block;    
     text-decoration: none;
     color:var(--text-color);
 }
+
 .contacts-mail:hover, .contacts-mail:focus, .contacts-phone:hover, .contacts-phone:focus{
     color: var(--accent-color);
 }
@@ -135,13 +143,14 @@ img {
     color: var(--secondary-text-color);
     padding-bottom: 200px;
     padding-top: 200px;
-   
-    
 }
 
 
 .button-hero {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+
     font-family: inherit;
     background-color: var(--accent-color);
     color: var(--secondary-text-color);
@@ -154,21 +163,21 @@ img {
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin-left: auto;
-    margin-right: auto;
+   
  
     
 }
 
 .hero-header {
-    font-weight: 900;
+    
     width: 696px;
     height: 120px;
 
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-
+    
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
@@ -178,25 +187,28 @@ img {
 }
 
 /* Features styles */
+
 .features {
     width: 1170px;
     padding-top: 94px;
     margin-right: auto;
     margin-left: auto;
 }
+
 .features-list{
     display: flex;
     list-style-type: none;
 }
+
 .features-list-item:not(:last-child){
     margin-right: 30px;
 }
 
 .features-header{
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 .features-text{
         font-size: 14px;
@@ -206,6 +218,7 @@ img {
 }
 
 /* Services styles */
+
 .services{
     width: 1170px;
         padding-top: 94px;
@@ -221,6 +234,7 @@ img {
 .services-list-item:not(:last-child){
     margin-right: 30px;
 }
+
 .services-header{
     margin-bottom: 50px;
         font-size: 36px;
@@ -260,10 +274,8 @@ img {
         letter-spacing: 0.03em;
         text-align: center;
         background: #FFFFFF;
-            /* material shadow v1 */
-        
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
 
 }
 .com-card-header{
