@@ -394,8 +394,8 @@ img {
 }
 .logo2 {
     display: inline-block;
-    /* margin-top: 60px;
-    margin-bottom: 20px; */
+    
+    margin-bottom: 20px;
     
     font-family: 'Raleway';
         font-weight: 700;
