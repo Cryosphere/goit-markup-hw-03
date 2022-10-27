@@ -331,7 +331,7 @@ img {
         justify-content: flex-start;
 }
 
-.project-item>h2{
+.project-item-header{
         display: block;
         margin-bottom: 4px;
         font-size: 18px;
@@ -342,7 +342,7 @@ img {
 
 .project-item{
         /* width: 370px; */
-        border-bottom: 1px solid #EEEEEE;
+        
         padding: 0;
 }       
 
@@ -355,8 +355,10 @@ img {
 }
 
 .projects-item-info {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 20px 24px;
     
 }
 
