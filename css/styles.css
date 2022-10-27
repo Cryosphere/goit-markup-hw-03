@@ -283,10 +283,12 @@ img {
 }
 
 /* Gallery styles */
+
 .gallery{
    padding-bottom: 94px;
    padding-top: 94px;
   }
+
 .filter{
     list-style-type: none;
     display: flex;
@@ -299,7 +301,7 @@ img {
 }
 
 .button-filter{
-    padding: 0 22px;
+        padding: 0 22px;
         font-family: inherit;
         font-weight: 500;
         font-size: 16px;
@@ -311,9 +313,8 @@ img {
         cursor: pointer;
         border-radius: 4px;
         border: none;
-        
-
 }
+
 .button-filter:hover, .button-filter:focus{
         background-color: var(--accent-color);
         color: var(--secondary-text-color);
@@ -321,8 +322,8 @@ img {
 }
 
 .projects{
-    margin: 0;
-    padding: 0;
+        margin: 0;
+        padding: 0;
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
@@ -331,7 +332,7 @@ img {
 }
 
 .project-item>h2{
-    display: block;
+        display: block;
         margin-bottom: 4px;
         font-size: 18px;
         line-height: 2.0;
@@ -340,7 +341,7 @@ img {
 }
 
 .project-item{
-    width: 370px;
+        /* width: 370px; */
         border-bottom: 1px solid #EEEEEE;
         padding: 0;
 }       
@@ -352,11 +353,13 @@ img {
         letter-spacing: 0.03em;
         color: var(--text-color);
 }
+
 .projects-item-info {
     padding-top: 20px;
     padding-bottom: 20px;
     
 }
+
 /* Footer styles */
 
 .footer {
